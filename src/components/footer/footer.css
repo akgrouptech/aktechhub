@@ -1,0 +1,18 @@
+.custom-footer-bottom {
+    padding: 1rem 0;
+    background: #1c2446;
+}
+.footer-copytight {
+    margin-bottom: 0;
+    color: #fff;
+    text-align: center;
+}
+.cr-link {
+    color: #00f6ff !important;
+    border-bottom: 1px solid #00f6ff;
+    text-decoration: none;
+}
+.cr-link:hover {
+    color: #fff !important;
+    border-bottom: 1px solid #fff;
+}
