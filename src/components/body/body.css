@@ -1,0 +1,293 @@
+.banner-section {
+    height: calc(100vh - 275px);
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.banner-section:before {
+    content: "";
+    background-image: url('../../components/Images/banner-bg.png');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-section:after {
+    content: "";
+    background-image: url('../../components/Images/banner.png');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-card-wrapper {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.social-media-card {
+    background: #fff;
+    padding: 20px 40px 30px;
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    grid-row-gap: 10px;
+    align-items: flex-start;
+    position: relative;
+    border: 1px solid #e7e7e8;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    background-image: url("../Images/bg-3.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.social-media-card:before {
+    content: '';
+    filter: blur(40px);
+    background-image: linear-gradient(90deg, #ea4c8933, #009d7766 49%, #932efa33);
+    border-radius: 24px;
+    position: absolute;
+    inset: 0%;
+    box-shadow: 0 24px 12px #eaf9f540;
+    opacity: 0;
+    z-index: -1;
+}
+
+.social-media-card:hover:before {
+    opacity: 0.4;
+}
+
+.social-media-logo {
+    width: 70px;
+}
+
+.followers-count {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+}
+
+.sub-text {
+    font-size: 14px;
+}
+
+.section-heighlight::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 180px;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translate(-60%, -50%);
+    background: linear-gradient(90deg, rgb(241, 89, 41) 0px, rgba(255, 255, 255, 0) 51.44%);
+}
+
+.section-heighlight::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 180px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translate(55%, -50%);
+    background: linear-gradient(270deg, rgb(241, 89, 41) 0px, rgba(255, 255, 255, 0) 47.96%);
+}
+
+.section-heighlight {
+    position: relative;
+    color: #737373;
+}
+
+.section-tb.full-section {
+    min-height: 80vh;
+    background-image: url("../Images/full-section-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.fullcontent-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.section-tb.full-section .section-heighlight {
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+    text-shadow: 0px 0px 25px #fff;
+}
+.bg-cards {
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px 40px 100px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+}
+.bg-cards:last-child {
+    border-right: none;
+}
+.bg-cards:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+.fc-card-ttl {
+    font-size: 24px;
+    font-weight: bold;
+}
+.fc-card-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease-out .15s;
+}
+.bg-cards:hover .fc-card-content{
+	max-height: 250px;
+    transition: max-height .5s ease-in;
+}
+/* template card css start */
+.temp-card {
+    border-radius: 2px;
+    overflow: hidden; 
+    padding: 12px;
+    max-height: 400px;
+    background: #ffffff;
+    scrollbar-width: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    margin-bottom: 25px;
+}
+.temp-card:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+.temp-img-wrapper {
+    overflow: hidden; 
+    height: 100%; 
+    transform: translateY(0);
+}
+
+.temp-card:hover .temp-img-wrapper {
+    transform: translateY(calc(-100% + 375px)); 
+    transition: transform 5s ease; 
+}
+.temp-card:hover:before {
+    opacity: 1;
+    z-index: 1;
+}
+.temp-card:hover .exp-btn {
+    display: block;
+}
+/* template card css end */
+/* explore icon button css start */
+.exp-btn {
+    display: none;
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    margin: 0;
+    overflow: hidden;
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%) rotate(140deg);
+}
+
+.exp-btn:before,
+.exp-btn:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: 7px;
+}
+
+.exp-btn:before {
+  border: 4px solid #f0eeef;
+  transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+    transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.exp-btn:after {
+  border: 4px solid #96daf0;
+  transform: scale(1.3);
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+}
+
+.exp-btn:hover:before,
+.exp-btn:focus:before {
+  opacity: 0;
+  transform: scale(0.7);
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.exp-btn:hover:after,
+.exp-btn:focus:after {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+    transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.button-box {
+  display: flex;
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+
+.button-elem {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 17px 18px 0 18px;
+  transform: rotate(180deg);
+  fill: #f0eeef;
+}
+
+.exp-btn:hover .button-box,
+.exp-btn:focus .button-box {
+  transition: 0.4s;
+  transform: translateX(-56px);
+}
+
+/* explore icon button css end */

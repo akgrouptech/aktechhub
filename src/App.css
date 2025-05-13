@@ -1,0 +1,13 @@
+.section-tb {
+    padding: 50px 0;
+    position: relative;
+}
+p {
+    font-size: 16px;
+}
+.bold-text {
+    font-weight: 600;
+}
+.section-tb.bg-grad {
+    background-image: linear-gradient(to top, #e3faff, #fff);
+}
