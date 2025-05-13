@@ -14,7 +14,10 @@ import Go_live from '../../components/Images/Go_live.png';
 import login from '../../components/Images/login.png';
 import Themes from '../../components/Images/Themes.png';
 
-import ayush_temp from '../../components/Images/ayush-temp.png';
+import ayush_temp1 from '../../components/Images/ayush-temp1.png';
+import ayush_temp2 from '../../components/Images/ayush-temp2.png';
+import ayush_temp3 from '../../components/Images/ayush-temp3.png';
+import ayush_temp4 from '../../components/Images/ayush-temp4.png';
 
 const body = () => {
     return (
@@ -25,18 +28,8 @@ const body = () => {
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="custom-section-text mb-0">
-                                <p class="section-text">BISAG-N is a cloud service developed
-                                    for government entities to generate Secure, Scalable &amp; Sugamya
-                                    (Accessible) websites. It enables government entities to choose
-                                    from various templates for generating websites as well as
-                                    customizing and managing the content easily, thus empowering them
-                                    to maintain their online presence.</p>
-                                <p class="section-text mb-0">
-                                    <span class="bold-text">Government entities</span> requiring
-                                    websites that are primarily informational can use S3WaaS
-                                    framework to generate and host the website under GOV.IN or NIC.IN
-                                    domain.
-                                </p>
+                                <p class="section-text"><span class="bold-text">Aktechhub</span> is a frontend design agency focused on creating clean, modern, and responsive interfaces. We specialize in HTML, CSS, JavaScript, and Bootstrap to build websites that are fast, user-friendly, and visually appealing.</p>
+                                <p class="section-text mb-0">We also work with React and Spring Boot using Thymeleaf to develop dynamic, interactive frontends tailored to your business needs. Whether it's a landing page or a full web app, we deliver quality designs that bring your ideas to life.</p>
                             </div>
                         </div>
                     </div>
@@ -53,9 +46,8 @@ const body = () => {
                                 <img src={compliance} alt="GIGW Compliance" title="GIGW Compliance" class="img-fluid" />
                             </div>
                             <div class="about-social-media">
-                                <div class="followers-count">GIGW Compliance</div>
-                                <div class="sub-text">Compliant with mandatory guidelines
-                                    from the compliance matrix of GIGW</div>
+                                <div class="followers-count">Secure Website</div>
+                                <div class="sub-text">Built with best practices for security, ensuring safe and reliable user experience</div>
                             </div>
                         </div>
                         <div class="social-media-card">
@@ -115,16 +107,15 @@ const body = () => {
             <section class="section-tb full-section">
                 <div class="container-fluid">
                     <h2 class="section-title text-center mb-5">
-                        <span class="section-heighlight">Creating a Website through BISAG-N</span>
+                        <span class="section-heighlight">Creating a Website through aktechhub</span>
                     </h2>
                     <div class="fullcontent-cards">
                         <div class="bg-cards">
                             <div class="fc-card-img">
                                 <img src={login} alt="Login at S3WaaS" title="Login at S3WaaS" class="img-fluid" />
                             </div>
-                            <h3 class="fc-card-ttl">01 Login at BISAG-N</h3>
-                            <p class="fc-card-content">Login with official email address
-                                (gov.in or nic.in.)</p>
+                            <h3 class="fc-card-ttl">01 Login at aktechhub</h3>
+                            <p class="fc-card-content">Login with official email address</p>
                         </div>
                         <div class="bg-cards">
                             <div class="fc-card-img">
@@ -170,9 +161,9 @@ const body = () => {
                         <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                             <div class="temp-card">
                                 <div class="temp-img-wrapper">
-                                    <img class="img-fluid" alt="" title="" src={ayush_temp} />
+                                    <img class="img-fluid" alt="" title="" src={ayush_temp1} />
                                 </div>
-                                <a class="exp-btn" href="#" title="Explore more">
+                                <a class="exp-btn" href="https://angelschoolvyara.in/" target="_blank" title="Explore more">
                                     <span class="button-box">
                                         <span class="button-elem">
                                             <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
@@ -191,9 +182,9 @@ const body = () => {
                         <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                             <div class="temp-card">
                                 <div class="temp-img-wrapper">
-                                    <img class="img-fluid" alt="" title="" src={ayush_temp} />
+                                    <img class="img-fluid" alt="" title="" src={ayush_temp2} />
                                 </div>
-                                <a class="exp-btn" href="#" title="Explore more">
+                                <a class="exp-btn" href="https://myibaworld.com/" target="_blank" title="Explore more">
                                     <span class="button-box">
                                         <span class="button-elem">
                                             <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
@@ -212,9 +203,9 @@ const body = () => {
                         <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                             <div class="temp-card">
                                 <div class="temp-img-wrapper">
-                                    <img class="img-fluid" alt="" title="" src={ayush_temp} />
+                                    <img class="img-fluid" alt="" title="" src={ayush_temp3} />
                                 </div>
-                                <a class="exp-btn" href="#" title="Explore more">
+                                <a class="exp-btn" href="https://radar-template.webflow.io/home/01" target="_blank" title="Explore more">
                                     <span class="button-box">
                                         <span class="button-elem">
                                             <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
@@ -233,9 +224,9 @@ const body = () => {
                         <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                             <div class="temp-card">
                                 <div class="temp-img-wrapper">
-                                    <img class="img-fluid" alt="" title="" src={ayush_temp} />
+                                    <img class="img-fluid" alt="" title="" src={ayush_temp4} />
                                 </div>
-                                <a class="exp-btn" href="#" title="Explore more">
+                                <a class="exp-btn" href="https://avenor.webflow.io/home-three" target="_blank" title="Explore more">
                                     <span class="button-box">
                                         <span class="button-elem">
                                             <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
