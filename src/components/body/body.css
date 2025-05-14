@@ -1,5 +1,5 @@
 .banner-section {
-    height: calc(100vh - 275px);
+    height: calc(100vh - 320px);
     overflow: hidden;
     display: flex;
     position: relative;
@@ -163,6 +163,7 @@
 .fc-card-ttl {
     font-size: 24px;
     font-weight: bold;
+    margin: 10px 0;
 }
 .fc-card-content {
     max-height: 0;
