@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import logo from '../../components/Images/AKTechHUB.png';
 import './header.css';
 import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+import Connect_modal from '../connect-modal/connect_modal';
+
 
 function Header() {
     const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false);
     return (
         <>
             <div className='custom-header-inner'>
@@ -70,40 +71,8 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <Modal className="modal" show={show} onHide={handleClose}>
-                <Modal.Body>
-                    <div className="feedback-wrapper">
-                        <div className="row">
-                            <h2 className="con-title">Feedback</h2>
-                            <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                                <div className="form-group">
-                                    <label className="form-label">Name<span className="mandatory">*</span></label>
-                                    <input type="text" name="" id="" className="form-control" placeholder="Enter Name" autoComplete="off" />
-                                </div>
-                            </div>
-                            <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                                <div className="form-group">
-                                    <label className="form-label">Email ID<span className="mandatory">*</span></label>
-                                    <input type="text" name="" id="" className="form-control" placeholder="Enter Email Address" autoComplete="off" />
-                                </div>
-                            </div>
-                            <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                                <div className="form-group">
-                                    <label className="form-label">Contact Number<span className="mandatory">*</span></label>
-                                    <input type="text" name="" id="" className="form-control" placeholder="Enter Contact Number" autoComplete="off" />
-                                </div>
-                            </div>
-                            <div className="custom-btn-section custom-btn-center">
-                                <ul className="custom-btn-group">
-                                    <li className="custom-btn-item">
-                                        <button type="submit" id="" value="" className="btn btn-primary custom-btn" title="Sunbmit">Submit</button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </Modal.Body>
-            </Modal>
+           {show && <Connect_modal show={show} handleClose={handleClose} />}
+          
         </>
     )
 }
