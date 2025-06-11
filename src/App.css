@@ -11,3 +11,16 @@ p {
 .section-tb.bg-grad {
     background-image: linear-gradient(to top, #e3faff, #fff);
 }
+.form-group{
+    margin-bottom: 15px;
+}
+.form-label{
+    margin-bottom: 5px;
+}
+.custom-modal{
+    padding: 0;
+}
+.form-control {
+    z-index: 1;
+    position: relative;
+}
