@@ -1,24 +1,17 @@
 import React, { useRef, useState } from 'react'
 import Modal from 'react-bootstrap/Modal';
 import emailjs from 'emailjs-com';
-import ReCAPTCHA from 'react-google-recaptcha';
 
-const YOUR_RECAPTCHA_SITE_KEY = '6LdA2VwrAAAAANZOx0MYVa-GACkHZtUvoZCpC6g0';
 const Connect_modal = ({ show, handleClose }) => {
 
     const form = useRef();
-    const [verified, setVerified] = useState(false);
+  
 
-    const handleCaptcha = (value) => {
-        setVerified(!!value); // reCAPTCHA token
-    };
+ 
 
     const sendEmail = (e) => {
         e.preventDefault();
-        if (!verified) {
-            alert('Please verify you are not a robot.');
-            return;
-        }
+
         emailjs.sendForm(
             'service_dufop3c',
             'template_z9wbzqg',
@@ -66,10 +59,7 @@ const Connect_modal = ({ show, handleClose }) => {
                                     <textarea className="form-control" name="user_message" placeholder="Enter Your Query" required />
                                 </div>
                             </div>
-                            <ReCAPTCHA
-                                sitekey={YOUR_RECAPTCHA_SITE_KEY}
-                                onChange={handleCaptcha}
-                            />
+                        
 
                             <div className="custom-btn-section custom-btn-center">
                                 <ul className="custom-btn-group">
