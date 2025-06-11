@@ -18,7 +18,7 @@
 
 .banner-section:after {
     content: "";
-    background-image: url(../../components/Images/banner.png);
+    background-image: url('../../components/Images/banner.png');
     position: absolute;
     height: 500px;
     width: 100%;
