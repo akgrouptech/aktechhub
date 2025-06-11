@@ -3,7 +3,7 @@ import Modal from 'react-bootstrap/Modal';
 import emailjs from 'emailjs-com';
 import ReCAPTCHA from 'react-google-recaptcha';
 
-const YOUR_RECAPTCHA_SITE_KEY = '6LcssVwrAAAAAJiRveqo2s1sXYqwLHxO1ADGiD9M';
+const YOUR_RECAPTCHA_SITE_KEY = '6LdA2VwrAAAAANZOx0MYVa-GACkHZtUvoZCpC6g0';
 const Connect_modal = ({ show, handleClose }) => {
 
     const form = useRef();
